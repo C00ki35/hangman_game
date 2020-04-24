@@ -1,38 +1,163 @@
-.App {
+body {
+  background-image: url("../src/images/woodbg.jpg");
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  height: 100vh;
+}
+
+.logo {
+  grid-area: 1 / 1 / span 1 / span 3;
+}
+
+.logo h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Galindo", cursive;
+  font-size: 4em;
+}
+.lives {
+  grid-area: 1 / 4 / span 1 / span 3;
+  display: inline;
+  padding-left: 20%;
+}
+.hangman {
+  grid-area: 2 / 2 / span 3 / span 3;
+}
+
+.hangman-image {
   text-align: center;
+  height: 55vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hangbody {
+  display: flex;
+  width: 70%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.usedletters {
+  grid-area: 2 / 4 / span 2 / span 2;
+}
+.letters {
+  grid-area: 5 / 1 / span 1 / span 5;
+  background-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.lives li {
+  display: inline;
+  list-style: none;
+  font-size: 2em;
+}
+
+.usedletters ul li {
+  float: left;
+  list-style: none;
+  background-color: whitesmoke;
+  margin-right: 2px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+.usedCards {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 3em;
+}
+input[type="input"] {
+  width: 8%;
+  box-sizing: border-box;
+  font-size: 2em;
+  background-color: white;
+}
+.letters {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: black;
+}
+
+.letters ul li {
+  display: inline;
+  list-style: none;
+  align-content: center;
+  padding: 10px;
+  font-size: 2em;
+}
+
+.showletter {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  width: 100%;
+  margin-right: 10px;
+  background-color: yellow;
+  border-radius: 5px;
+}
+/* 
+
+.logo {
+
+}
+
+
+
+
+
+
+
+.gamearea {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+.dead {
+  display: flex;
+  flex-direction: column;
+  line-height: 5px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 12em;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.win {
+  display: flex;
+  flex-direction: column;
+  line-height: 5px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.win h1 {
+  font-size: 7em;
+  font-family: "Galindo", cursive;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.win p {
+  font-size: 3em;
 }
+.deadButton {
+  width: 500px;
+  border-radius: 10px;
+  font-family: "Galindo", cursive;
+  font-size: 0.2em;
+}
+
+.winButton {
+  width: 300px;
+  border-radius: 10px;
+  font-family: "Galindo", cursive;
+  font-size: 2em;
+}
+
+
+
+ */
